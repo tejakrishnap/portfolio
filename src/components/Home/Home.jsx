@@ -1,4 +1,12 @@
 import React from "react";
+import { ReactComponent as ReactIcon } from "./../../svgs/react.svg";
+import { ReactComponent as AngularIcon } from "./../../svgs/angular.svg";
+import { ReactComponent as JSIcon } from "./../../svgs/js.svg";
+import { ReactComponent as NodeIcon } from "./../../svgs/node.svg";
+import { ReactComponent as ReduxIcon } from "./../../svgs/redux.svg";
+import { ReactComponent as SassIcon } from "./../../svgs/sass.svg";
+import { ReactComponent as TailwindIcon } from "./../../svgs/tailwind.svg";
+import { ReactComponent as MongoIcon } from "./../../svgs/mongo.svg";
 
 const icons = {
   social: [
@@ -27,7 +35,7 @@ const Home = () => {
   return (
     <div className="bg-white-light h-screen">
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="flex items-center mx-auto max-w-6xl py-32 sm:py-48 lg:py-48">
+        <div className="flex items-center mx-auto max-w-5xl py-32 sm:py-48 lg:py-40">
           <div>
             <h1 className="text-4xl text-left font-poppins font-bold sm:text-[55px] leading-[66px] text-black">
               Javascript Fullstack Developer
@@ -49,8 +57,38 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <div className="hero-img">
-            {/* <img src="dp.jpeg" alt="Display Picture" className="rounded-full" /> */}
+          <div className="hero-img"></div>
+        </div>
+        <div className="flex items-center mx-auto max-w-5xl">
+          {" "}
+          <p className="tech-stack font-mulish font-bold">Tech Stack</p>
+          <div className="flex tech-icons">
+            <ul className="flex">
+              <li className="flex">
+                <ReactIcon title="React" />
+              </li>
+              <li className="flex">
+                <NodeIcon title="Node" />
+              </li>
+              <li className="flex">
+                <MongoIcon title="Mongo" />
+              </li>
+              <li className="flex">
+                <ReduxIcon title="Redux" />
+              </li>
+              <li className="flex">
+                <AngularIcon title="Angular" />
+              </li>
+              <li className="flex">
+                <JSIcon title="Javascript" />
+              </li>
+              <li className="flex">
+                <SassIcon title="Sass" />
+              </li>
+              <li className="flex">
+                <TailwindIcon title="Tailwind CSS" />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
