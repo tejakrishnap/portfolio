@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-white h-2/4 mx-auto max-w-screen-lg">
+    <div className="bg-white h-2/4 mx-auto max-w-screen-lg" id="about">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="flex gap-8 items-center mx-auto max-w-6xl py-32 sm:py-48 lg:py-48">
           <div className="basis-1/2">
@@ -17,17 +17,18 @@ const About = () => {
               ABOUT ME
             </h3>
             <h4 className="text-2xl text-left font-poppins font-bold sm:text-[25px] leading-[35px] text-black">
-              A dedicated Front-end Developer based in Overland Park, Kansas 📍
+              A dedicated UI/UX Developer based in Overland Park, Kansas 📍
             </h4>
             <p className="mt-5 text-left text-lg leading-7 text-gray font-mulish font-medium">
               As a Front-End Developer, I possess an impressive arsenal of
-              skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
-              excel in designing and maintaining responsive websites that offer
-              a smooth user experience. My expertise lies in crafting dynamic,
-              engaging interfaces through writing clean and optimized code and
-              utilizing cutting-edge development tools and techniques. I am also
-              a team player who thrives in collaborating with cross-functional
-              teams to produce outstanding web applications.
+              skills in HTML, CSS, JavaScript, React, Figma, photoshop, XD,
+              Tailwind, and SCSS. I excel in designing and maintaining
+              responsive websites that offer a smooth user experience. My
+              expertise lies in crafting dynamic, engaging interfaces through
+              writing clean and optimized code and utilizing cutting-edge
+              development tools and techniques. I am also a team player who
+              thrives in collaborating with cross-functional teams to produce
+              outstanding web applications.
             </p>
             <div className="flex space-x-6 mt-6"></div>
           </div>

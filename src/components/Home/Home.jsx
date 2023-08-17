@@ -7,6 +7,9 @@ import { ReactComponent as ReduxIcon } from "./../../svgs/redux.svg";
 import { ReactComponent as SassIcon } from "./../../svgs/sass.svg";
 import { ReactComponent as TailwindIcon } from "./../../svgs/tailwind.svg";
 import { ReactComponent as MongoIcon } from "./../../svgs/mongo.svg";
+import { ReactComponent as PS } from "./../../svgs/ps.svg";
+import { ReactComponent as Figma } from "./../../svgs/figma.svg";
+import { ReactComponent as XD } from "./../../svgs/xd.svg";
 
 const icons = {
   social: [
@@ -33,7 +36,7 @@ const icons = {
 
 const Home = () => {
   return (
-    <div className="bg-white-light h-screen">
+    <div className="bg-white-light h-screen" id="home">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="flex items-center mx-auto max-w-5xl py-32 sm:py-48 lg:py-40">
           <div>
@@ -42,7 +45,8 @@ const Home = () => {
             </h1>
             <p className="mt-6 text-left text-lg leading-7 text-gray font-mulish font-medium">
               Hi, I'm Sai Krishna. A passionate Front-end React and Back-end
-              Node Developer based in Overland Park, Kansas.📍
+              Node Developer with UI/UX experience based in Overland Park,
+              Kansas.📍
             </p>
             <div className="flex space-x-6 mt-6">
               {icons.social.map((item) => (
@@ -87,6 +91,15 @@ const Home = () => {
               </li>
               <li className="flex">
                 <TailwindIcon title="Tailwind CSS" />
+              </li>
+              <li className="flex">
+                <Figma title="Figma" />
+              </li>
+              <li className="flex">
+                <XD title="Adobe XD" />
+              </li>
+              <li className="flex">
+                <PS title="Photoshop" />
               </li>
             </ul>
           </div>
