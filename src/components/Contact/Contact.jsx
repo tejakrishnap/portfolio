@@ -3,7 +3,7 @@ import { FaMapMarkedAlt, FaMailBulk } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="bg-white-light h-fit" id="contact">
+    <div className="bg-white h-fit" id="contact">
       <div className="relative isolate lg:px-8 mx-auto max-w-screen-lg">
         <div className="flex gap-8 items-center mx-auto max-w-6xl py-32 sm:py-48 lg:py-28">
           <div className="">

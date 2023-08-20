@@ -82,7 +82,7 @@
 .tech-stack {
   border-right: 2px solid rgba(45, 46, 50, 0.5);
   color: #2d2e32;
-  margin-right: 7rem;
+  margin-right: 4rem;
   padding-right: 2rem;
 }
 
@@ -98,7 +98,66 @@
   width: 4rem;
   margin-right: 16px;
 }
+
 .tech-icons li svg {
   width: 36px;
   height: 36px;
+}
+
+.projects-grid {
+  grid-gap: 5rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  height: auto;
+  width: 100%;
+}
+
+.project {
+  flex-direction: row;
+  gap: 32px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.project-image {
+  border-radius: 1.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+}
+
+.stack {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.stack p {
+  font-size: 17px;
+  text-align: center;
+  text-transform: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-family: Mulish, sans-serif;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 8px;
 }

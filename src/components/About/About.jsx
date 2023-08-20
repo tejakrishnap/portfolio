@@ -30,7 +30,6 @@ const About = () => {
               thrives in collaborating with cross-functional teams to produce
               outstanding web applications.
             </p>
-            <div className="flex space-x-6 mt-6"></div>
           </div>
         </div>
       </div>
