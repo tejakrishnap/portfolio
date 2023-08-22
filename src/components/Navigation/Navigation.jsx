@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import React from "react";
+import React, { useState } from "react";
 
 const navigation = [
   { name: "Home", href: "#home", current: true },
@@ -14,6 +14,8 @@ function classNames(...classes) {
 }
 
 const Navigation = () => {
+  const [currentActiveItem, setcurrentActiveItem] = useState("Home");
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -45,11 +47,12 @@ const Navigation = () => {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current
+                          item.name === currentActiveItem
                             ? "bg-gray-900 text-blue"
                             : "text-gray-300 hover:text-blue",
                           "font-poppins rounded-md px-4 py-2 text-lg font-semibold"
                         )}
+                        onClick={() => setcurrentActiveItem(item.name)}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
@@ -61,20 +64,21 @@ const Navigation = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+          <Disclosure.Panel className="sm:hidden relative bg-gray-800">
+            <div className="space-y-1 px-2 pb-3 pt-2 absolute w-full">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
+                    item.name === currentActiveItem
+                      ? "bg-gray-900 text-blue"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
+                  onClick={() => setcurrentActiveItem(item.name)}
                 >
                   {item.name}
                 </Disclosure.Button>
